@@ -8,50 +8,51 @@ namespace NumberManipulation.Web.Util
 {
     public class IntegerOperations
     {
-        public static int Add()
+        public static void Add()
         {
             int a = 18;
             int b = 6;
             int c = a + b;
-            return c;
+            Console.WriteLine(c);
         }
-        public static int Subtract()
+        public static void Subtract()
         {
             int a = 18;
             int b = 6;
-            int c = a - b; return c;
+            int c = a - b;
+            Console.WriteLine(c);
         }
-        public static int Multiplication()
+        public static void Multiplication()
         {
             int a = 18;
             int b = 6;
             int c = a * b;
-            return c;
+            Console.WriteLine(c);
         }
-        public static int Division()
+        public static void Division()
         {
             int a = 18;
             int b = 6;
             int c = a / b;
-            return c;
+            Console.WriteLine(c);
         }
-        public static int AddFirst()
+        public static void AddFirst()
         {
             int a = 5;
             int b = 4;
             int c = 2;
             int d = (a + b) * c;
-            return d;
+            Console.WriteLine(d);
         }
-        public static int MultiplyFirst()
+        public static void MultiplyFirst()
         {
             int a = 5;
             int b = 4;
             int c = 2;
             int d = a + b * c;
-            return d;
+            Console.WriteLine(d);
         }
-        public static int ComplexEquation()
+        public static void ComplexEquation()
         {
             int a = 5;
             int b = 4;
@@ -59,33 +60,33 @@ namespace NumberManipulation.Web.Util
             //C# coverts the equation below into this, 9 - 12 + 48 / 3 + 12
             //the first things to get equated are (12 * 4) then 6 * c
             int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
-            return d;
+            Console.WriteLine(d);
         }
 
 
-        public static string Modulo()
+        public static void Modulo()
         {
             int a = 7;
             int b = 4;
             int c = 3;
             int d = (a + b) / c;
             int e = (a + b) % c;
-            return $"quotient: {d} remainder: {e}";
+            Console.WriteLine($"quotient: {d} remainder: {e}");
 
         }
 
-        public static string MinMaxIntValues()
+        public static void MinMaxIntValues()
         {
             int max = int.MaxValue;
             int min = int.MinValue;
-            return $"The range of integers is {min} to {max}";
+            Console.WriteLine($"The range of integers is {min} to {max}");
         }
 
-        public static string OverflowInt()
+        public static void OverflowInt()
         {
             int max = int.MaxValue;
             int what = max + 5;
-            return $"An example of overflow: {what}";
+            Console.WriteLine($"An example of overflow: {what}");
         }
 
         

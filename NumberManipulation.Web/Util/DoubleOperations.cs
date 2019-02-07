@@ -8,34 +8,34 @@ namespace NumberManipulation.Web.Util
 {
     public class DoubleOperations
     {
-        public static double Add()
+        public static void Add()
         {
             double a = 5;
             double b = 4;
             double c = 2;
             double d = (a + b) / c;
-            return d;
+            Console.WriteLine(d);
         }
 
-        public static double AddLargerDouble()
+        public static void AddLargerDouble()
         {
             double a = 19;
             double b = 23;
             double c = 8;
             double d = (a + b) / c;
-            return d;
+            Console.WriteLine(d);
         }
 
-        public static string MinMaxDouble()
+        public static void MinMaxDouble()
         {
             double max = double.MaxValue;
             double min = double.MinValue;
-            return $"The range of double is {min} to {max}";
+            Console.WriteLine($"The range of double is {min} to {max}");
         }
-        public static double DoubleRoundError()
+        public static void DoubleRoundError()
         {
             double third = 1.0 / 3.0;
-            return third;
+            Console.WriteLine(third);
         }
 
     }
